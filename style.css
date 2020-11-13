@@ -1,0 +1,12 @@
+/* CSS Document */
+.font{
+	color:rgba(79,64,64,1.00);
+	text-align: center;
+}
+.background{
+	background-image: linear-gradient(orchid,  aqua);;
+}
+
+	h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;text-decoration: underline;
+}
