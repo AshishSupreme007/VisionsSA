@@ -1,12 +1,283 @@
-/* CSS Document */
-.font{
-	color:rgba(79,64,64,1.00);
-	text-align: center;
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
 }
-.background{
-	background-image: linear-gradient(orchid,  aqua);;
+.navbarsearch{
+	height: 100vh;
+	width: 100%;
+	background-image: url("img/bgblack.png");
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
 }
 
-	h1 {
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;text-decoration: underline;
+.texttype1{
+	color: #DDAF47;
+	text-align: center;
+	
+	font-size:128px;
+	align-items: center;
+
 }
+
+.texttype2{
+	color: #DDAF47;
+	text-align: center;
+	font-size:28px;
+}
+
+.texttypedesc{
+	color: aqua;
+	text-align: center;
+	padding:20px;
+	font-size:19px;
+}
+
+.WebTitle{
+	color:#eec76e;
+	text-align: center;
+	font-size:32px;
+	padding-bottom:20px;
+}
+
+
+.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: #C600FE;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #DDAF47;
+	transition: .4s;
+}
+.btn{
+	background-color:#DDAF47;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+
+
+.btnmobi{
+	visibility: hidden;
+}
+
+.typesbg{
+	width: 100%;
+	padding: 15px 0px;
+	background-color: #191919;}
+.bgimg{
+	display:flex;
+	margin-left: auto;
+	margin-right: 35px;
+	opacity:0.3;
+	width: 325px;
+	height: 325px;
+}
+.bgimg1{
+	display: flex;
+	opacity:0.3;
+	width: 325px;
+	height: 325px;
+}
+
+
+.typesbg1{
+	width: 100%;
+	padding: 15px 0px;
+	background-color: #101010;
+}
+
+
+.searchbardesign{
+	width: 100%;
+	max-width: 700px;
+	background: rgba(255, 255, 255, 0.2);
+	display: flex;
+	align-items: center;
+	border-radius: 60px;
+	padding:10px 20px;
+	backdrop-filter: blur(2px) saturate(180%);
+}
+
+.searchbardesign input{
+	background: rgba(255, 255, 255, 0);
+	flex: 1;
+	border: 0;
+	outline: none;
+	padding: 24px 20px;
+	font-size: 20px;
+	color: #CAC7FF
+	
+}
+
+::placeholder{
+	color: #CAC7FF
+}
+
+.searchbardesign button img{
+	width: 25px;
+	
+}
+
+.searchbardesign button{
+	border: 0;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background:#58629b;
+	cursor: pointer;
+}
+
+.medialinks{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	column-gap: 20px;	
+	padding-bottom: 50px;
+	display: flex;
+	text-align: justify;
+}
+.medialinks a {
+	display: flex;
+	justify-content:center;
+	position: relative;
+	background: #444;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	font-weight: 400;	
+	padding: 10px 30px;
+	transition: 0.5s;
+	flex-direction: column;
+	column-gap: 20px;
+	align-items: center;
+	align-content: center;
+	margin-left: 190px;
+}
+
+.medialinks a:hover{
+	letter-spacing: 0.25em;
+	background: var(--clr);
+	color: var(--clr);
+	box-shadow: 0 0 35px var(--clr);
+}
+
+.mobileservices{
+	color: #eec76e;
+	visibility: hidden;
+	text-align: center;
+	line-height: 200%;
+	margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 800px){
+	
+	.navbarsearch{
+		width:110%;
+	}
+	
+	.typesbg{
+		width: 110%;
+	}
+	.mobileservices{
+		visibility: visible;
+	}
+	
+	.frame
+	{width: 100%;	
+	}
+
+	
+	
+.btn{visibility: hidden;
+	 
+	}	
+
+.btnmobi{
+	visibility: visible;
+	background-color:#DDAF47;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+	
+ nav ul{
+	 position: absolute;
+	 width: 100%;
+	 top: 75px;
+	 right: 2;
+	 z-index: 2;
+	 font-size: 8px;
+	 visibility: hidden;
+	}
+
+	nav ul li{
+		display: inline-flex;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		
+	}
+	nav ul li a{
+		display: inline-flex;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}	
+
+
+
+
+
+@media only screen and (max-height: 900px){
+	.frame{width:100%;
+      }
+
+
+
+
+
+
